@@ -24,3 +24,70 @@
    недостаточно знаний.
    Задание выложить на гитхаб.
 ```
+
+### Стек
+
+- Python 3.10
+- Django 5.0
+
+### Запуск проекта в dev-режиме
+
+Инструкция ориентирована на операционную систему windows и утилиту git bash.
+Для прочих инструментов используйте аналоги команд для вашего окружения.
+
+1. Клонируйте репозиторий и перейдите в него в командной строке:
+
+```
+git clone https://github.com/RomanKostikov/tree_menu.git
+```
+
+2. Установите и активируйте виртуальное окружение:
+
+```
+python -m venv venv
+```
+
+```
+source venv/Scripts/activate
+```
+
+3. Установите зависимости из файла requirements.txt:
+
+```
+pip install -r requirements.txt
+```
+
+4. В папке с файлом manage.py выполните миграции:
+
+```
+python manage.py migrate
+```
+
+5. Создайте суперюзера, зайдите в админку:
+
+```
+python manage.py createsuperuser
+```
+
+6. В папке с файлом manage.py запустите сервер, выполнив команду:
+
+```
+python manage.py runserver
+```
+
+7. Перейдите в админку и добавьте несколько пунктов и подпунктов ваших меню
+   (главное меню должно совпадать с переданным url Н: tree_main)
+8. Открываем главную страницу и видим результат проделанной работ.
+
+### Скриншоты выполненное работы
+
+1. Admin панель django:
+   ![1](img/1.JPG)
+2. Отображение меню в браузере:
+   ![2](img/2.JPG)
+
+### Полезные источники:
+
+1. https://docs.djangoproject.com/en/5.0/ref/templates/builtins/
+2. https://ngangasn.com/create-custom-template-tags-in-django-a-complete-guide/
+3. https://stackoverflow.com/
